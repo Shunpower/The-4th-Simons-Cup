@@ -8,18 +8,56 @@ compile:
   py: ''
 data:
 - args:
-    n: 100
-    m: 10
-    bin: 0
+    nq: 20
+    spc: 0
   cases:
   - 1
+  - 2
+- args:
+    nq: 150
+    spc: 0
+  cases:
+  - 3
+  - 4
+- args:
+    nq: 100000
+    spc: 1
+  cases:
+  - 5
+  - 6
+  - 7
+- args:
+    nq: 100000
+    spc: 2
+  cases:
+  - 8
+  - 9
+- args:
+    nq: 100000
+    spc: 3
+  cases:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+- args:
+    nq: 100000
+    spc: 0
+  cases:
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
 folder: problem
 memory limit: 512 MiB
 name: remember
 partial score: false
 pre: []
 samples: []
-time limit: 1.0
+time limit: 3.0
 title:
   zh-cn: 碰拳相欠
 type: program
