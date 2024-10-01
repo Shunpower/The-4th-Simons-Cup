@@ -28,7 +28,7 @@ Simons 希望你求出，对于任意 $(s,t)$ 满足 $1\le s\le n,1\le t\le 2n$�
 
 为了减小输出量，你只需要输出 $\sum\limits_{s=1}^n(2^s\cdot\bigoplus\limits_{t=1}^{2n}t\times f(s,t))$ 对 $2007072007$ 取模的值。
 
-**std 不依赖于输出方式**。
+**标准程序不依赖于输出方式**。
 
 {{ s('sample', 1) }}
 

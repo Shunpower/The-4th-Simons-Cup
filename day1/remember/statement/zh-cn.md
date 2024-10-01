@@ -115,15 +115,7 @@ int main(int argc, char** argv);
 
 上面是只提示存在第二组样例，但不渲染到题面中。
 
-{{ s('subtasks') }}
-
-不要使用markdown原生的表格，使用下列方式渲染一个表格，其中表格存放在试题目录的 `tables` 子目录下。
-
-{{ tbl('table', width = [1, 6], merge = False, titled = True) }}
-
-原理上用一个二维的 json 表格或 python 表格存储。会自动纵向合并相同的格子，如果添加了 `merge = False` 则不会合并。不支持横向合并。建议用 python 的格式写，如例子中的 `data.pyinc`，这样可以根据数据生成；跟数据无关的表格则可以像 `table.json` 那样存储。`titled` 表示在要合并的前提下，第一行是否参与合并。
-
-如果自己手动造表格，可以用 `null` 表示和上一行合并，可以用 `no_merge` 函数表示强制不合并特定的格子。
+{{ s('部分分设置') }}
 
 {{ s('scoring') }}
 
