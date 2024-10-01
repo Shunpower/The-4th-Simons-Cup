@@ -42,7 +42,25 @@ Simons 希望你求出，对于任意 $(s,t)$ 满足 $1\le s\le n,1\le t\le 2n$�
 
 {{ self.sample_file() }}
 
-上面是只提示存在第二组样例，但不渲染到题面中。
+这组样例满足测试点 $3,4$ 的限制。
+
+{{ s('sample', 3) }}
+
+{{ self.sample_file() }}
+
+这组样例满足测试点 $8\sim 10$ 的限制。
+
+{{ s('sample', 4) }}
+
+{{ self.sample_file() }}
+
+这组样例满足测试点 $11\sim 14$ 的限制。
+
+{{ s('sample', 5) }}
+
+{{ self.sample_file() }}
+
+这组样例满足测试点 $15\sim 20$ 的限制。
 
 {{ s('部分分设置') }}
 

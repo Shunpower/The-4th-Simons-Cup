@@ -2,20 +2,7 @@
 
 {{ s('background') }}
 
-这样的子标题会被程序自动处理，可以方便翻译和提取每个部分等。如果你想自己定义子标签（尽管我们一般**不推荐**自己定义 s 标签），或者不需要国际化的话，你可将这些子标题直接写成这样：
-
-```
-{{ s('如何使用交互库') }}
-### 对于使用C/C++的选手
-```
-
-If you want an English statement file, just copy this file as *en.md* and replace any Chinese text into English.
-
-更加详细的题目书写文档在[这里](https://git.thusaac.org/publish/tuack/wikis/%E9%A2%98%E9%9D%A2%E7%9A%84%E4%B9%A6%E5%86%99)。
-
-如果你不需要某些章节，可以直接删除。比如这一段是“题目背景”，很多题目其实并不需要这一段。
-
-子标题请**不要**自己手动加方括号 `【】` 。
+{{ img('background.jpg', size = 0.5, align = 'middle', inline = False, caption='生来便是高山，向前亦是坦途') }}
 
 {{ s('description') }}
 
@@ -57,8 +44,6 @@ int main(int argc, char** argv);
 除公式内可以使用 tex 的部分语法外，不要直接使用任何 html 语法和 tex 语法。替代方案如下：
 
 不要用 markdown 自带的语法插入图片（因为目前支持不好），用下列语法插入图片：
-
-{{ img('sample.png', size = 0.5, align = 'middle', inline = False, caption='图片样例', label='fig:sample') }}
 
 其中 `inline` 为 `False` 表示这是一个独占一行的图片，此时支持 `align`，选项为 `left`，`middle` 或 `right`。后面这些参数可以不写。如果添加了 `caption` 字段，则对于 tex 的渲染结果，会在图片下方出现类似于“图1：图片样例”字样。
 
