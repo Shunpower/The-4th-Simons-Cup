@@ -1,0 +1,9 @@
+folder: contest
+name: The 4th Simons Cup
+short title:
+  zh-cn: The 4th Simons Cup
+subdir:
+- day1
+title:
+  zh-cn: NOIP2024 互测
+version: 2
