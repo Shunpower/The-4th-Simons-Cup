@@ -14,8 +14,9 @@
 
 ### C. 碰拳相欠 (remember)
 
+原题：[SpOI Round 1 F. 我看到了，谢谢你们](https://www.luogu.com.cn/problem/P10796) 的 15 分部分分
+
 
 
 ### D. 我一直在 (withyou)
 
-原题：[SpOI Round 1 F. 我看到了，谢谢你们](https://www.luogu.com.cn/problem/P10796)

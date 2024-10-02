@@ -6,7 +6,7 @@
 
 {{ s('description') }}
 
-**本题强制在线**。
+
 
 {{ s('input format') }}
 
