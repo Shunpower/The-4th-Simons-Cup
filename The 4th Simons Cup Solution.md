@@ -20,3 +20,7 @@
 
 ### D. 我一直在 (withyou)
 
+原题：[CF1773L Lisa's Sequences](https://www.luogu.com.cn/problem/CF1773L)
+
+~~开屏巨大部分分表格~~
+

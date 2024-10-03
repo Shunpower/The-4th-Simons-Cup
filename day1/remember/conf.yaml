@@ -20,20 +20,20 @@ data:
   - 3
   - 4
 - args:
-    nq: 100000
+    nq: 20000
     spc: 1
   cases:
   - 5
   - 6
   - 7
 - args:
-    nq: 100000
+    nq: 20000
     spc: 2
   cases:
   - 8
   - 9
 - args:
-    nq: 100000
+    nq: 20000
     spc: 3
   cases:
   - 10

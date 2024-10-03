@@ -8,18 +8,187 @@ compile:
   py: ''
 data:
 - args:
-    n: 100
-    m: 10
-    bin: 0
+    T: 100
+    n: 6
+    v: 0
+    spc: -1
   cases:
   - 1
+- args:
+    T: 100
+    n: 20
+    v: 0
+    spc: -1
+  cases:
+  - 2
+- args:
+    T: 100
+    n: 20
+    v: 1
+    spc: -1
+  cases:
+  - 3
+- args:
+    T: 100
+    n: 40
+    v: 0
+    spc: -1
+  cases:
+  - 4
+- args:
+    T: 100
+    n: 40
+    v: 1
+    spc: -1
+  cases:
+  - 5
+- args:
+    T: 100
+    n: 70
+    v: 0
+    spc: -1
+  cases:
+  - 6
+- args:
+    T: 100
+    n: 70
+    v: 1
+    spc: -1
+  cases:
+  - 7
+- args:
+    T: 100
+    n: 100
+    v: 0
+    spc: -1
+  cases:
+  - 8
+- args:
+    T: 100
+    n: 100
+    v: 1
+    spc: -1
+  cases:
+  - 9
+- args:
+    T: 100
+    n: 600
+    v: 0
+    spc: -1
+  cases:
+  - 10
+- args:
+    T: 100
+    n: 600
+    v: 1
+    spc: -1
+  cases:
+  - 11
+- args:
+    T: 100
+    n: 1000
+    v: 0
+    spc: -1
+  cases:
+  - 12
+- args:
+    T: 100
+    n: 1000
+    v: 1
+    spc: -1
+  cases:
+  - 13
+- args:
+    T: 100
+    n: 1000
+    v: 0
+    spc: 0
+  cases:
+  - 14
+- args:
+    T: 100
+    n: 1000
+    v: 1
+    spc: 1
+  cases:
+  - 15
+- args:
+    T: 1000000
+    n: 200000
+    v: 0
+    spc: 2
+  cases:
+  - 16
+- args:
+    T: 1000000
+    n: 200000
+    v: 1
+    spc: 2
+  cases:
+  - 17
+- args:
+    T: 1000000
+    n: 200000
+    v: 0
+    spc: 3
+  cases:
+  - 18
+- args:
+    T: 1000000
+    n: 200000
+    v: 1
+    spc: 3
+  cases:
+  - 19
+- args:
+    T: 1000000
+    n: 200000
+    v: 0
+    spc: 4
+  cases:
+  - 20
+- args:
+    T: 1000000
+    n: 200000
+    v: 1
+    spc: 4
+  cases:
+  - 21
+- args:
+    T: 1000000
+    n: 200000
+    v: 0
+    spc: 0
+  cases:
+  - 22
+- args:
+    T: 1000000
+    n: 200000
+    v: 1
+    spc: 1
+  cases:
+  - 23
+- args:
+    T: 1000000
+    n: 1000000
+    v: 0
+    spc: -1
+  cases:
+  - 24
+- args:
+    T: 1000000
+    n: 1000000
+    v: 1
+    spc: -1
+  cases:
+  - 25
 folder: problem
 memory limit: 512 MiB
 name: withyou
 partial score: false
 pre: []
 samples: []
-time limit: 1.0
+time limit: 2.0
 title:
   zh-cn: 我一直在
 type: program
