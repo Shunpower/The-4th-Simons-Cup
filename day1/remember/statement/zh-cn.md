@@ -97,11 +97,17 @@ Simons 很有大局观，所以他需要知道所有变化开始前和每一次�
 
 {{ self.sample_file() }}
 
-这组样例满足测试点 $15\sim 20$ 的限制。
+这组样例满足测试点 $15\sim 17$ 的限制。
+
+{{ s('sample', 7) }}
+
+{{ self.sample_file() }}
+
+这组样例满足测试点 $18\sim 20$ 的限制。
 
 {{ s('部分分设置') }}
 
-对于 $100\%$ 的数据，$1\le T\le 2000$，$\sum (n+q)\le 6\times 10^5$，$1\le n,q\le 10^5$，$0\le type\le 1$，且在任何时候都保证 $1\le a_i\le 2\times 10^9$，$|w_i|\le 2\times 10^9$。
+对于 $100\%$ 的数据，$1\le T\le 2000$，$\sum (n+q)\le 2\times 10^6$，$1\le n,q\le 10^6$，$0\le type\le 1$，且在任何时候都保证 $1\le a_i\le 2\times 10^9$，$|w_i|\le 2\times 10^9$。
 
 对于任意一次变化，保证 $o$ 为 $1$ 或 $2$，且 $1\le p\le n$。$o=1$ 时，保证 $1\le x\le 2\times 10^9$；$o=2$ 时，保证 $|x|\le 2\times 10^9$。
 

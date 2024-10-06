@@ -4,7 +4,7 @@ for datum in prob['data']:	#引用conf.json/yaml中的变量
 	args = datum['args']
 	row = [
 		tl.cases(datum['cases']),			#tl.cases(数组)对于整数编号数组会整合成形如$1\sim 3,5$
-		"$= %s$" % tl.hn(args['n']),		#tl.hn函数用于把10000输出成10^{4}这样好看的样子
+		r"$\le %s$" % tl.hn(args['n']),		#tl.hn函数用于把10000输出成10^{4}这样好看的样子
 											#python的字符串可以直接用百分号格式化成新的字符串
 		no_merge("A" if args['spc'] == 1 else ("B" if args['spc'] == 2 else "无"))
 											#no_merge函数可以强制本行在任何时候都不参与合并

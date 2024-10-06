@@ -8,63 +8,78 @@ compile:
   py: ''
 data:
 - args:
-    n: 15
-    m: 15
+    n: 16
+    m: 1
     spc: 0
   cases:
   - 1
+- args:
+    n: 16
+    m: 2
+    spc: 0
+  cases:
   - 2
 - args:
-    n: 1000
-    m: 1000
+    n: 2
+    m: -1
     spc: 0
   cases:
   - 3
   - 4
+- args:
+    n: 4
+    m: -1
+    spc: 0
+  cases:
   - 5
-- args:
-    n: 1000000
-    m: 0
-    spc: 0
-  cases:
   - 6
-  - 7
 - args:
-    n: 1000000
-    m: 1
+    n: 6
+    m: -1
     spc: 0
   cases:
+  - 7
   - 8
-  - 9
 - args:
-    n: 1000000
+    n: 16
     m: -1
     spc: 1
   cases:
+  - 9
   - 10
 - args:
-    n: 1000000
+    n: 16
     m: -1
     spc: 2
   cases:
   - 11
   - 12
 - args:
-    n: 1000000
+    n: 16
     m: -1
-    spc: 0
+    spc: 3
   cases:
   - 13
   - 14
 - args:
-    n: 1000000000000000000
-    m: -1
+    n: 16
+    m: 10
     spc: 0
   cases:
   - 15
   - 16
+- args:
+    n: 10
+    m: -1
+    spc: 0
+  cases:
   - 17
   - 18
+- args:
+    n: 16
+    m: -1
+    spc: 0
+  cases:
   - 19
   - 20
 folder: problem
