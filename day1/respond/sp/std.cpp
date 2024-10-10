@@ -26,7 +26,7 @@
 #define il inline
 #define ptc putchar
 using namespace std;
-const int N=1e5+10;
+const int N=8010;
 namespace Shun{
     int lowbit(int x){
         return x&-x;
@@ -60,12 +60,48 @@ namespace Shun{
     }
 }
 using namespace Shun;
+const ll mod=2007072007;
+int n;
+ll f[N];
+ll a[N];
+ll ans[N];
+ll g[N];
+ll h1[N];
+ll h2[N];
+ll sum[N];
+ll pow2[N];
 int main(){
 #ifdef Shun
     freopen(".in","r",stdin);
     freopen(".out","w",stdout);
 #endif
-
+    ios::sync_with_stdio(false);
+    cin>>n;
+    pow2[0]=1;
+    fr1(i,1,n) pow2[i]=(pow2[i-1]+pow2[i-1])%mod;
+    fr1(i,1,n) cin>>a[i],sum[i]=sum[i-1]+a[i];
+    // cout<<"?"<<g[3][3]<<endl;
+    fr1(i,1,n) g[i]=a[i];
+    fr1(t,1,n+n){
+        fr1(s,1,n) g[s]=max({g[s],(s+t<=n?sum[s+t]-sum[s-1]:0),(t<s?sum[s]-sum[s-t-1]:0)});
+        fr1(s,1,n){
+            ll nf=a[s];
+            nf=max(h1[s-1],h2[s+1]);
+            if(t<=n) nf=max(nf,g[s]);
+            f[s]=max(nf,f[s]);
+            ans[s]^=1ll*t*f[s];
+            // cout<<f[s]<<" ";
+        }
+        // cout<<endl;
+        // fr1(s,1,n) cout<<h2[s]<<",";
+        // cout<<endl;
+        fr2(s,n,1) h1[s]=max(h1[s-1],g[s]);
+        fr1(s,1,n) h2[s]=max(h2[s+1],g[s]);
+    }
+    fr1(i,1,n) ans[i]%=mod;
+    ll res=0;
+    fr1(i,1,n) (res+=pow2[i]*ans[i]%mod)%=mod;
+    cout<<res<<'\n';
     ET;
 }
-//ALL FOR Zhang Junhao.s
+//ALL FOR Zhang Junhao.

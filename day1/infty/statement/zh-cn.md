@@ -136,7 +136,7 @@ Simons 选择让神经网络帮助他理清混乱与空白的大脑。
 
 {{ s('部分分设置') }}
 
-对于 $100\%$ 的数据，$1\le T\le 100$，$1\le n\le 16$，$1\le m\le 2^n$，$0\le a_i,b_i<2^n$。
+对于 $100\%$ 的数据，$1\le T\le 20$，$1\le n\le 16$，$1\le m\le 2^n$，$0\le a_i,b_i<2^n$。
 
 {{ tbl('data') }}
 
@@ -144,7 +144,7 @@ Simons 选择让神经网络帮助他理清混乱与空白的大脑。
 
 特殊性质 B：$\forall i\in[1,m],\exists k\in[0,2^n), a_i+k\equiv b_i\pmod {2^n}$。
 
-特殊性质 C：$\forall i\in[1,m],a_i+b_i<4$。
+特殊性质 C：$\forall i\in[1,m],a_i+b_i<8$。
 
 {{ s('hint') }}
 
