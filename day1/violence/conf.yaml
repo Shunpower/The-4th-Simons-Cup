@@ -1,0 +1,69 @@
+args:
+  n: 1000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- args:
+    nq: 20
+    spc: 0
+  cases:
+  - 1
+  - 2
+- args:
+    nq: 150
+    spc: 0
+  cases:
+  - 3
+  - 4
+- args:
+    nq: 50000
+    spc: 1
+  cases:
+  - 5
+  - 6
+  - 7
+- args:
+    nq: 50000
+    spc: 2
+  cases:
+  - 8
+  - 9
+- args:
+    nq: 50000
+    spc: 3
+  cases:
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+- args:
+    nq: 100000
+    spc: 0
+  cases:
+  - 15
+  - 16
+  - 17
+- args:
+    nq: 1000000
+    spc: 0
+  cases:
+  - 18
+  - 19
+  - 20
+folder: problem
+memory limit: 512 MiB
+name: violence
+partial score: false
+pre: []
+samples: []
+time limit: 1.0
+title:
+  zh-cn: 千言万雨
+type: program
+users: {}
+version: 2

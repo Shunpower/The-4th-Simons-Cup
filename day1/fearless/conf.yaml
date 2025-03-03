@@ -1,0 +1,96 @@
+args:
+  n: 1000
+compile:
+  c: -O2 -std=c11
+  cpp: -O2 -std=c++14
+  java: ''
+  pas: -O2
+  py: ''
+data:
+- args:
+    n: 16
+    m: 1
+    spc: 0
+  cases:
+  - 1
+- args:
+    n: 16
+    m: 2
+    spc: 0
+  cases:
+  - 2
+- args:
+    n: 2
+    m: -1
+    spc: 0
+  cases:
+  - 3
+  - 4
+- args:
+    n: 4
+    m: -1
+    spc: 0
+  cases:
+  - 5
+  - 6
+- args:
+    n: 6
+    m: -1
+    spc: 0
+  cases:
+  - 7
+  - 8
+- args:
+    n: 16
+    m: -1
+    spc: 1
+  cases:
+  - 9
+  - 10
+- args:
+    n: 16
+    m: -1
+    spc: 2
+  cases:
+  - 11
+  - 12
+- args:
+    n: 16
+    m: -1
+    spc: 3
+  cases:
+  - 13
+  - 14
+- args:
+    n: 16
+    m: 10
+    spc: 0
+  cases:
+  - 15
+  - 16
+- args:
+    n: 10
+    m: -1
+    spc: 0
+  cases:
+  - 17
+  - 18
+- args:
+    n: 16
+    m: -1
+    spc: 0
+  cases:
+  - 19
+  - 20
+folder: problem
+memory limit: 512 MiB
+name: fearless
+partial score: false
+pre: []
+samples: []
+time limit: 6.0
+title:
+  zh-cn: 不止两票
+type: program
+users: {}
+version: 2
