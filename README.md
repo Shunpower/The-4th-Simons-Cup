@@ -1,4 +1,4 @@
-## The 4th Simons Cup (NOIP2024 互测)
+## The 4th Simons Cup (NOIP2025 互测)
 
 Prepared by Shunpower
 
