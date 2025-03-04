@@ -5,7 +5,7 @@ for datum in prob['data']:
 		tl.cases(datum['cases']),			
 		r"$\le %s$" % tl.hn(args['n']),		
 		(r"$\le %s$" % args['m'].hn()) if args['m'] != -1 else r"$\le 2^n$",
-		no_merge("A" if args['spc'] == 1 else ("B" if args['spc'] == 2 else ("C" if args['spc'] == 3 else "无")))
+		no_merge("A" if args['spc'] == 1 else ("B" if args['spc'] == 2 else ("C" if args['spc'] == 3 else ("D" if args['spc'] == 4 else "无"))))
 	]
 	ret.append(row)	
 base.log.debug(u'输出调试信息')	

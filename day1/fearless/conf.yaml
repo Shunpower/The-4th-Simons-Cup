@@ -14,74 +14,94 @@ data:
   cases:
   - 1
 - args:
-    n: 16
-    m: 2
+    n: 3
+    m: 3
     spc: 0
   cases:
   - 2
+  - 3
 - args:
-    n: 2
-    m: -1
+    n: 4
+    m: 5
     spc: 0
   cases:
-  - 3
   - 4
+  - 5
 - args:
     n: 4
     m: -1
     spc: 0
   cases:
-  - 5
   - 6
+  - 7
 - args:
     n: 6
     m: -1
     spc: 0
   cases:
-  - 7
   - 8
+  - 9
 - args:
     n: 16
     m: -1
     spc: 1
   cases:
-  - 9
   - 10
+  - 11
 - args:
     n: 16
     m: -1
     spc: 2
   cases:
-  - 11
   - 12
+  - 13
 - args:
     n: 16
     m: -1
     spc: 3
   cases:
-  - 13
   - 14
+  - 15
 - args:
     n: 16
-    m: 10
-    spc: 0
+    m: -1
+    spc: 4
   cases:
-  - 15
   - 16
 - args:
-    n: 10
-    m: -1
+    n: 16
+    m: 3
     spc: 0
   cases:
   - 17
   - 18
 - args:
     n: 16
-    m: -1
+    m: 10
     spc: 0
   cases:
   - 19
   - 20
+- args:
+    n: 10
+    m: -1
+    spc: 0
+  cases:
+  - 21
+  - 22
+- args:
+    n: 13
+    m: -1
+    spc: 0
+  cases:
+  - 23
+  - 24
+- args:
+    n: 16
+    m: -1
+    spc: 0
+  cases:
+  - 25
 folder: problem
 memory limit: 512 MiB
 name: fearless

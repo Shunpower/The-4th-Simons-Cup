@@ -9,50 +9,76 @@ compile:
 data:
 - args:
     n: 10
+    v: 1000
     spc: 0
   cases:
   - 1
   - 2
 - args:
-    n: 50
+    n: 20
+    v: 1000
     spc: 0
   cases:
   - 3
   - 4
+  - 5
 - args:
-    n: 400
+    n: 1000
+    v: 1000
     spc: 0
   cases:
-  - 5
   - 6
   - 7
+  - 8
 - args:
-    n: 1000
+    n: 100000
+    v: 1000
     spc: 1
   cases:
-  - 8
   - 9
   - 10
-- args:
-    n: 1000
-    spc: 2
-  cases:
   - 11
   - 12
+- args:
+    n: 100000
+    v: 1000
+    spc: 2
+  cases:
   - 13
   - 14
 - args:
-    n: 8000
-    spc: 0
+    n: 100000
+    v: 1000
+    spc: 3
   cases:
   - 15
   - 16
   - 17
+- args:
+    n: 100000
+    v: 1000
+    spc: 4
+  cases:
   - 18
   - 19
   - 20
+- args:
+    n: 100000
+    v: 8
+    spc: 0
+  cases:
+  - 21
+  - 22
+  - 23
+- args:
+    n: 100000
+    v: 1000
+    spc: 0
+  cases:
+  - 24
+  - 25
 folder: problem
-memory limit: 64 MiB
+memory limit: 512 MiB
 name: zime
 partial score: false
 pre: []

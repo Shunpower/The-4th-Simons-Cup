@@ -1,4 +1,4 @@
-ret = [["测试点","$n$","特殊性质"]]	#注意右斜杠经常需要两次转义
+ret = [["测试点","$n,q$","$v$","特殊性质"]]	#注意右斜杠经常需要两次转义
 	#表格中的竖线（绝对值符号）一般用\lvert\rvert，否则会和某些环境下的表格分隔符号冲突
 for datum in prob['data']:	#引用conf.json/yaml中的变量
 	args = datum['args']
@@ -6,7 +6,8 @@ for datum in prob['data']:	#引用conf.json/yaml中的变量
 		tl.cases(datum['cases']),			#tl.cases(数组)对于整数编号数组会整合成形如$1\sim 3,5$
 		r"$\le %s$" % tl.hn(args['n']),		#tl.hn函数用于把10000输出成10^{4}这样好看的样子
 											#python的字符串可以直接用百分号格式化成新的字符串
-		no_merge("A" if args['spc'] == 1 else ("B" if args['spc'] == 2 else "无"))
+		r"$\le %s$" % tl.hn(args['v']),
+		no_merge("A" if args['spc'] == 1 else ("B" if args['spc'] == 2 else ("C" if args['spc'] == 3 else ("D" if args['spc'] == 4 else "无"))))
 											#no_merge函数可以强制本行在任何时候都不参与合并
 											#相反直接留None可以强制本行在任何时候都合并到上一行
 	]

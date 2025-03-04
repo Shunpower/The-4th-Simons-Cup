@@ -1,5 +1,3 @@
-{{ self.title() }}
-
 {{ s('background') }}
 
 {{ img('background.png', size = 0.4, align = 'middle', inline = False, caption='“太多烦心事只有选择伴奏我愿意斟酌”') }}
@@ -8,7 +6,7 @@
 
 {{ s('description') }}
 
-**本题包含多组测试数据。**
+**这是一道交互题**。
 
 Simons 偷偷潜入 z!moo 的录音室超前点播了 z!moo 还未完成的的最新创作。这首歌由 $n$ 个音符组成，第 $i$ 个音符是 $a_i$。其中的每个音符都在 $1$ 到 $10^9-1$ 之间。
 

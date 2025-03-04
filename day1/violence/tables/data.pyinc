@@ -1,10 +1,9 @@
-ret = [["测试点","$n,q$","特殊性质"]]	
+ret = [["测试点","$n$"]]	
 for datum in prob['data']:	
 	args = datum['args']
 	row = [
 		tl.cases(datum['cases']),			
-		r"$\le %s$" % args['nq'].hn(),		
-		no_merge("C" if args['spc'] == 3 else ("B" if args['spc'] == 2 else ("A" if args['spc'] == 1 else "无")))
+		r"$\le %s$" % args['n'].hn()
 	]
 	ret.append(row)	
 base.log.debug(u'输出调试信息')	

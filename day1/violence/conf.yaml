@@ -8,53 +8,57 @@ compile:
   py: ''
 data:
 - args:
-    nq: 20
-    spc: 0
+    n: 5
   cases:
   - 1
   - 2
 - args:
-    nq: 150
-    spc: 0
+    n: 15
   cases:
   - 3
   - 4
 - args:
-    nq: 50000
-    spc: 1
+    n: 80
   cases:
   - 5
   - 6
   - 7
-- args:
-    nq: 50000
-    spc: 2
-  cases:
   - 8
-  - 9
 - args:
-    nq: 50000
-    spc: 3
+    n: 300
   cases:
+  - 9
   - 10
+- args:
+    n: 3000
+  cases:
   - 11
   - 12
+- args:
+    n: 8000
+  cases:
   - 13
   - 14
-- args:
-    nq: 100000
-    spc: 0
-  cases:
   - 15
   - 16
-  - 17
 - args:
-    nq: 1000000
-    spc: 0
+    n: 300000
   cases:
+  - 17
   - 18
   - 19
   - 20
+- args:
+    n: 1000000
+  cases:
+  - 21
+  - 22
+- args:
+    n: 20000000
+  cases:
+  - 23
+  - 24
+  - 25
 folder: problem
 memory limit: 512 MiB
 name: violence
