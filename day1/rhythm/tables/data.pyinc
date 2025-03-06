@@ -1,12 +1,13 @@
-dict = {0:'A', 1:'B', 2:'C', 3:'D', 4:'E'}
-ret = [["测试点","$T$","$n$","特殊性质"]]
+dict = {-1: '无', 0:'AE', 1:'ABE', 2:'ACE', 3:'CE', 4:'D', 5:'C'}
+dict2 = {2:'2n', 3:'3n', 4:'4n', 6:'6n', 15:'15n', 200:'200n', 2000:r'\frac{n(n+1)}{2}'}
+ret = [["测试点","$n$","$q$","特殊性质"]]
 for datum in prob['data']:	
 	args = datum['args']
 	row = [
 		tl.cases(datum['cases']),			
-		r"$\le %s$" % (tl.hn(args['T']) if args['T'] != 100 else '100'),		
-		r"$\le %s$" % (tl.hn(args['n']) if args['n'] != 100 else '100'),	
-		no_merge(dict[args['spc']] if args['spc'] != -1 else "无")
+		r"$= %s$" % (tl.hn(args['n'])),		
+		no_merge(r"$= %s$" % (dict2[args['q']])),	
+		(dict[args['spc']])
 	]
 	ret.append(row)	
 base.log.debug(u'输出调试信息')

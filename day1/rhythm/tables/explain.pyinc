@@ -1,0 +1,15 @@
+ret = [["选手程序", "交互库", "说明"]]	#注意右斜杠经常需要两次转义
+	#表格中的竖线（绝对值符号）一般用\lvert\rvert，否则会和某些环境下的表格分隔符号冲突
+row = ["", "调用 rhythm(5,15,0)", "输入数据，开始测试"]
+ret.append(row)	#这是python数组的push_back
+row = ["调用 rewind(1,3)", "返回 $4$", "$[1,3]$ 的可空最大子段和为 $4$"]
+ret.append(row)	#这是python数组的push_back
+row = ["调用 rewind(3,5)", "返回 $5$", "$[3,5]$ 的可空最大子段和为 $5$"]
+ret.append(row)	#这是python数组的push_back
+row = ["调用 rewind(2,2)", "返回 $0$", "$[2,2]$ 的可空最大子段和为 $0$"]
+ret.append(row)	#这是python数组的push_back
+row = ["调用 rewind(2,4)", "返回 $3$", "$[2,4]$ 的可空最大子段和为 $3$"]
+ret.append(row)	#这是python数组的push_back
+row = ["返回 $[2,-1,3,-4,5]$", "向屏幕打印 OK: Simons did it", "交互结束"]
+ret.append(row)	#这是python数组的push_back
+return ret	#现在不用merge_ver函数也会自动合并了

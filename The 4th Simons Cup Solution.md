@@ -2,7 +2,7 @@
 
 ### A. 盛放 (zime)
 
-原题：[BZOJ4722 由乃](https://vjudge.net/problem/%E9%BB%91%E6%9A%97%E7%88%86%E7%82%B8-4722)
+Source：[BZOJ4722 由乃](https://vjudge.net/problem/%E9%BB%91%E6%9A%97%E7%88%86%E7%82%B8-4722)
 
 > 显然，这是 lxl 出的题。~~原题题面包含敏感内容。~~
 
@@ -24,7 +24,7 @@
 
 ### B. 千言万雨 (violence)
 
-原题：[[ARC115E] LEQ and NEQ](https://www.luogu.com.cn/problem/AT_arc115_e)
+Source：[LEQ and NEQ](https://www.luogu.com.cn/problem/AT_arc115_e), AtCoder Regular Contest 115 E
 
 对于 $n$ 比较小的情况可以直接线段树维护整体 dp，因为带 $\log$ 所以是不可能过的。
 
@@ -56,14 +56,17 @@ $$
 
 ### C. 想念特效药 (rhythm)
 
-原题：
+Source: [QOJ8553. Exchanging Kubic](https://qoj.ac/problem/8553), CCPC2023 Final
 
-喜欢我们非传统题吗！
+> 场上为什么只过了 $\mathcal O(1)$ 个队呢？
 
+我们主要介绍一下杜老师给出的漂亮的做法，在本题部分分的引导下是可以想出的。原题解是一个不太好玩的四边形不等式。
+
+首先我们使用 $n$ 次询问可以问出每个数的正负。我们把 $0$ 也算成负数。
 
 ### D. 不止两票 (fearless)
 
-原题：[UVA12267 Telephone Network](https://www.luogu.com.cn/problem/UVA12267)
+Source：[UVA12267 Telephone Network](https://www.luogu.com.cn/problem/UVA12267)
 
 其实是很简单的刻画题。~~不是阅读题~~
 
@@ -77,7 +80,7 @@ $$
 
 由于非常漂亮的独立性，可以发现在每一层的每一个专家系统都满足以上三条限制的调用路径集合将必然满足条件。
 
-这种要么要么的限制启发我们使用图论的办法解决这个题。“反色连边，同色限制”，我们把不允许同时满足的条件之间连边，跑二分图染色取一种颜色出来就能得到一个方案。
+这种限制启发我们使用图论的办法解决这个题。“反色连边，同色限制”，我们把不允许同时满足的条件之间连边，跑二分图染色取一种颜色出来就能得到一个方案。
 
 考虑每一层开 $2^{n+2}$ 个点，分别表示输入侧向哪个开关，输出侧向哪个开关。连边比较显然。连完边之后跑二分图染色取一种颜色的当这一层的路径方案。然后可以发现向两个 $S(n-1)$ 走的调用路径形成了两个子问题，可以分治递归下去继续做。
 
