@@ -16,13 +16,13 @@ data:
   - 2
   - 3
 - args:
-    n: 2000
+    n: 500
     q: 6
     spc: 0
   cases:
   - 4
 - args:
-    n: 2000
+    n: 1000
     q: 4
     spc: 0
   cases:
@@ -34,7 +34,7 @@ data:
   cases:
   - 6
 - args:
-    n: 2000
+    n: 1000
     q: 6
     spc: 1
   cases:
@@ -46,13 +46,13 @@ data:
   cases:
   - 8
 - args:
-    n: 2000
+    n: 500
     q: 6
     spc: 2
   cases:
   - 9
 - args:
-    n: 2000
+    n: 1000
     q: 4
     spc: 2
   cases:
@@ -64,7 +64,7 @@ data:
   cases:
   - 11
 - args:
-    n: 2000
+    n: 1000
     q: 6
     spc: 3
   cases:
@@ -76,7 +76,7 @@ data:
   cases:
   - 13
 - args:
-    n: 2000
+    n: 1000
     q: 6
     spc: 5
   cases:
@@ -94,14 +94,14 @@ data:
   cases:
   - 16
 - args:
-    n: 2000
+    n: 500
     q: 200
     spc: -1
   cases:
   - 17
   - 18
 - args:
-    n: 2000
+    n: 1000
     q: 15
     spc: -1
   cases:
