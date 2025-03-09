@@ -2,6 +2,9 @@
 __pycache__
 *.zip
 release
+data
+down
+simpleslemon
 uoj
 noi
 pc2

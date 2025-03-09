@@ -108,7 +108,7 @@ name: fearless
 partial score: false
 pre: []
 samples: []
-time limit: 6.0
+time limit: 7.5
 title:
   zh-cn: 不止两票
 type: program

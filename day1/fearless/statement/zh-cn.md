@@ -152,7 +152,7 @@ Zack 的神经元组成一个神经网络，回忆像是在里面寻找通途。
 
 特殊性质 B：$\forall i\in[1,m],\exists k\in[0,2^n), a_i+k\equiv b_i\pmod {2^n}$。
 
-特殊性质 C：$\forall i\in[1,m],a_i+b_i<8$。
+特殊性质 C：$\forall i\in[1,m],a_i<2^{10}\land b_i<2^{10}$。
 
 特殊性质 D：$\forall i\in[1,m],a_i=b_i$。
 

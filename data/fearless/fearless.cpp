@@ -145,11 +145,11 @@ void solve(){
     fr1(i,1,m) ori[i]=i;
     divide(n,1,m,0);
     puts("YES");
-    fr1(i,1,m){
-        write(ans[i]);
-        if(i!=m) ptc(' ');
-    }
-    ptc('\n');
+    // fr1(i,1,m){
+    //     write(ans[i]);
+    //     if(i!=m) ptc(' ');
+    // }
+    // ptc('\n');
 }
 #define Shun cute
 int main(){
