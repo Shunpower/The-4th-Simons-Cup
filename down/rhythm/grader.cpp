@@ -25,9 +25,11 @@ namespace Shun_Li_Cheng_Zhang{
 	}
 	void main(){
 		assert(scanf("%d%d%d",&n,&q,&c)==3);
+		int orgq=q;
 		for(int _=1;_<=20;_++){
 			flg=0;
-			for(int i=1;i<=n;i++) assert(scanf("%d",&a[i])==1); 
+			q=orgq;
+			for(int i=1;i<=n;i++) assert(scanf("%lld",&a[i])==1); 
 			for(int i=1;i<=n;i++){
 				mss[i][i-1]=-1e18;
 				long long minn=0;
